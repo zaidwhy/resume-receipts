@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-15T11:57:56+00:00",
+  "checked_at": "2026-11-15T12:23:31+00:00",
   "counts": {
     "not publicly checkable": 5,
     "matches": 23
@@ -146,7 +146,7 @@
     },
     {
       "section": "Experience",
-      "claim": "Pratyaya Limited: support analytics dashboard, 292 tests, 10 of 10 totals reconciled",
+      "claim": "Pratyaya Limited (Nobero): support analytics dashboard, 292 tests, 10 of 10 totals reconciled",
       "check": "private",
       "reason": "Private company repository with customer data; never published.",
       "verdict": "not publicly checkable",
