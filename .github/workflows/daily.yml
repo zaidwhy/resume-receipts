@@ -1,0 +1,34 @@
+name: daily receipts
+
+on:
+  schedule:
+    - cron: "30 1 * * *"   # 07:00 IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["claims.json", "receipts.py", "tests/**"]
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest==8.3.3
+      - run: python -m pytest -q
+      - name: Re-check every claim
+        run: python receipts.py claims.json report.json
+      - name: Publish the report
+        if: always()
+        run: |
+          git config user.name "receipts-bot"
+          git config user.email "receipts-bot@users.noreply.github.com"
+          git add report.json
+          git diff --cached --quiet || git commit -m "Daily receipts $(date -u +%F)"
+          git push
