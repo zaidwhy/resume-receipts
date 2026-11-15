@@ -30,7 +30,7 @@
 
   {"section": "Experience", "claim": "Zabira Academy: 24 audit findings (1 critical), production incident root cause, 113 end-to-end assertions",
    "check": "private", "reason": "Private company repository; source is the internship log kept by the owner."},
-  {"section": "Experience", "claim": "Pratyaya Limited: support analytics dashboard, 292 tests, 10 of 10 totals reconciled",
+  {"section": "Experience", "claim": "Pratyaya Limited (Nobero): support analytics dashboard, 292 tests, 10 of 10 totals reconciled",
    "check": "private", "reason": "Private company repository with customer data; never published."},
 
   {"section": "Selected work", "claim": "claimledger: a memory library's published LongMemEval recall reproduced exactly, 483 of 500",
