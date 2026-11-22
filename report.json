@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-21T08:35:34+00:00",
+  "checked_at": "2026-11-22T08:30:27+00:00",
   "counts": {
     "not publicly checkable": 5,
     "matches": 23
@@ -52,7 +52,7 @@
       "field": "stargazers_count",
       "minimum": 8800,
       "verdict": "matches",
-      "evidence": "stargazers_count = 8836"
+      "evidence": "stargazers_count = 8837"
     },
     {
       "section": "Proof strip",
