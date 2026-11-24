@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-23T09:30:15+00:00",
+  "checked_at": "2026-11-24T11:25:01+00:00",
   "counts": {
     "not publicly checkable": 5,
     "matches": 23
@@ -52,7 +52,7 @@
       "field": "stargazers_count",
       "minimum": 8800,
       "verdict": "matches",
-      "evidence": "stargazers_count = 8839"
+      "evidence": "stargazers_count = 8840"
     },
     {
       "section": "Proof strip",
@@ -62,7 +62,7 @@
       "field": "stargazers_count",
       "minimum": 4300,
       "verdict": "matches",
-      "evidence": "stargazers_count = 4389"
+      "evidence": "stargazers_count = 4390"
     },
     {
       "section": "Proof strip",
@@ -206,7 +206,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/tiebreak/main/README.md",
       "quote": "NFCorpus | 100 | 0.3395 | 0.3871 | +0.048",
       "verdict": "matches",
-      "evidence": "line 16"
+      "evidence": "line 18"
     },
     {
       "section": "Selected work",
@@ -214,7 +214,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/tiebreak/main/README.md",
       "quote": "FiQA | 100 | 0.2074 | 0.3164 | +0.109",
       "verdict": "matches",
-      "evidence": "line 19"
+      "evidence": "line 21"
     },
     {
       "section": "Selected work",
@@ -222,7 +222,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/tiebreak/main/README.md",
       "quote": "SciFact | 100 | 0.7303 | 0.7218 | -0.009",
       "verdict": "matches",
-      "evidence": "line 13"
+      "evidence": "line 15"
     },
     {
       "section": "Selected work",
