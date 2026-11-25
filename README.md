@@ -1,5 +1,7 @@
 # resume-receipts
 
+<img src=".github/hero.webp" alt="A stack of paper slips on a brass spike on a worn wooden bench by a window, one slip marked with a red line." width="100%">
+
 Every number on my resume, re-checked every morning against the public record behind it.
 
 A resume is a list of claims nobody checks. This repository checks mine: each claim in
