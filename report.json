@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T10:10:27+00:00",
+  "checked_at": "2026-11-25T17:32:04+00:00",
   "counts": {
-    "not publicly checkable": 5,
-    "matches": 23
+    "not publicly checkable": 7,
+    "could not be checked": 10,
+    "matches": 26
   },
   "results": [
     {
@@ -21,8 +22,8 @@
       "source": "https://api.github.com/repos/jd/tenacity/pulls/668",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -31,8 +32,8 @@
       "source": "https://api.github.com/repos/dry-python/returns/pulls/2480",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -41,38 +42,78 @@
       "source": "https://api.github.com/repos/memgraph/gqlalchemy/pulls/390",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
-      "claim": "13.4k stars combined: jd/tenacity has at least 8,800",
+      "claim": "Upstream PR huggingface/transformers #50873 is merged",
+      "check": "equals",
+      "source": "https://api.github.com/repos/huggingface/transformers/pulls/50873",
+      "field": "merged",
+      "expected": true,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "Upstream PR huggingface/sentence-transformers #4376 is merged",
+      "check": "equals",
+      "source": "https://api.github.com/repos/huggingface/sentence-transformers/pulls/4376",
+      "field": "merged",
+      "expected": true,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "202k stars combined: jd/tenacity has at least 8,800",
       "check": "at_least",
       "source": "https://api.github.com/repos/jd/tenacity",
       "field": "stargazers_count",
-      "minimum": 8800,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 8841"
+      "minimum": 8830,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
-      "claim": "13.4k stars combined: dry-python/returns has at least 4,300",
+      "claim": "202k stars combined: dry-python/returns has at least 4,300",
       "check": "at_least",
       "source": "https://api.github.com/repos/dry-python/returns",
       "field": "stargazers_count",
-      "minimum": 4300,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 4390"
+      "minimum": 4350,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
-      "claim": "13.4k stars combined: memgraph/gqlalchemy has at least 300",
+      "claim": "202k stars combined: memgraph/gqlalchemy has at least 300",
       "check": "at_least",
       "source": "https://api.github.com/repos/memgraph/gqlalchemy",
       "field": "stargazers_count",
       "minimum": 300,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 302"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "202k stars combined: huggingface/transformers has at least 169,250",
+      "check": "at_least",
+      "source": "https://api.github.com/repos/huggingface/transformers",
+      "field": "stargazers_count",
+      "minimum": 169250,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "202k stars combined: huggingface/sentence-transformers has at least 19,300",
+      "check": "at_least",
+      "source": "https://api.github.com/repos/huggingface/sentence-transformers",
+      "field": "stargazers_count",
+      "minimum": 19300,
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -137,8 +178,70 @@
       "evidence": "source answered with a page"
     },
     {
+      "section": "Proof strip",
+      "claim": "Published dev tool: Docstep on Open VSX",
+      "check": "resolves",
+      "source": "https://open-vsx.org/api/zaidwhy/docstep",
+      "verdict": "matches",
+      "evidence": "source answered with a page"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "Firefox bug 2067351 is RESOLVED FIXED, assigned to the author",
+      "check": "equals",
+      "source": "https://bugzilla.mozilla.org/rest/bug/2067351?include_fields=status,resolution",
+      "field": "bugs.0.resolution",
+      "expected": "FIXED",
+      "verdict": "matches",
+      "evidence": "bugs.0.resolution = \"FIXED\""
+    },
+    {
+      "section": "Proof strip",
+      "claim": "Firefox bug 2094299 is RESOLVED FIXED, assigned to the author",
+      "check": "equals",
+      "source": "https://bugzilla.mozilla.org/rest/bug/2094299?include_fields=status,resolution",
+      "field": "bugs.0.resolution",
+      "expected": "FIXED",
+      "verdict": "matches",
+      "evidence": "bugs.0.resolution = \"FIXED\""
+    },
+    {
+      "section": "Proof strip",
+      "claim": "Firefox bug 2094834 is RESOLVED FIXED, assigned to the author",
+      "check": "equals",
+      "source": "https://bugzilla.mozilla.org/rest/bug/2094834?include_fields=status,resolution",
+      "field": "bugs.0.resolution",
+      "expected": "FIXED",
+      "verdict": "matches",
+      "evidence": "bugs.0.resolution = \"FIXED\""
+    },
+    {
+      "section": "Proof strip",
+      "claim": "OEIS A398747: a(14) onward credited to me",
+      "source": "https://oeis.org/search?q=id:A398747&fmt=text",
+      "quote": "a(14) onward from Zaid Ali Syed, Nov 23 2026",
+      "verdict": "matches",
+      "evidence": "line 25"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "OEIS A303210: a(9)-a(11) credited to me",
+      "source": "https://oeis.org/search?q=id:A303210&fmt=text",
+      "quote": "a(9)-a(11) from Zaid Ali Syed, Nov 20 2026",
+      "verdict": "matches",
+      "evidence": "line 18"
+    },
+    {
+      "section": "Proof strip",
+      "claim": "OEIS A347504: a(4) credited to me",
+      "source": "https://oeis.org/search?q=id:A347504&fmt=text",
+      "quote": "a(4) from Zaid Ali Syed, Nov 18 2026",
+      "verdict": "matches",
+      "evidence": "line 14"
+    },
+    {
       "section": "Experience",
-      "claim": "Zabira Academy: 24 audit findings (1 critical), production incident root cause, 113 end-to-end assertions",
+      "claim": "Zabira Academy: 24 audit findings (1 critical), production incident root cause, 113 backend test assertions",
       "check": "private",
       "reason": "Private company repository; source is the internship log kept by the owner.",
       "verdict": "not publicly checkable",
@@ -146,11 +249,27 @@
     },
     {
       "section": "Experience",
-      "claim": "Pratyaya Limited (Nobero): support analytics dashboard, 292 tests, 10 of 10 totals reconciled",
+      "claim": "Zabira Academy: fixed 3 user-reported bugs the same day on a live platform taking Cashfree and Razorpay payments",
+      "check": "private",
+      "reason": "Private company repository; source is the internship log kept by the owner (entry of 2026-08-15).",
+      "verdict": "not publicly checkable",
+      "evidence": "Private company repository; source is the internship log kept by the owner (entry of 2026-08-15)."
+    },
+    {
+      "section": "Experience",
+      "claim": "Pratyaya Limited (Nobero): support analytics dashboard, 294 tests, 10 of 10 totals reconciled",
       "check": "private",
       "reason": "Private company repository with customer data; never published.",
       "verdict": "not publicly checkable",
       "evidence": "Private company repository with customer data; never published."
+    },
+    {
+      "section": "Leadership",
+      "claim": "IEEE Student Branch: Vice Chair (2026), Treasurer (2025); TEDxMGMU 2026 core team (graphics design)",
+      "check": "private",
+      "reason": "Branch and event records are not public in a machine-readable form; confirmable on request.",
+      "verdict": "not publicly checkable",
+      "evidence": "Branch and event records are not public in a machine-readable form; confirmable on request."
     },
     {
       "section": "Selected work",
@@ -230,7 +349,23 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
       "quote": "Docstep rewrites the docstring to match the signature and keeps what you wrote",
       "verdict": "matches",
-      "evidence": "line 53"
+      "evidence": "line 59"
+    },
+    {
+      "section": "Selected work",
+      "claim": "Docstep: a maintained fork of autoDocstring",
+      "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
+      "quote": "It is a maintained fork of",
+      "verdict": "matches",
+      "evidence": "line 3"
+    },
+    {
+      "section": "Selected work",
+      "claim": "Docstep: installable from the VS Code Marketplace and Open VSX",
+      "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
+      "quote": "code --install-extension zaidwhy.docstep",
+      "verdict": "matches",
+      "evidence": "line 12"
     },
     {
       "section": "Selected work",
