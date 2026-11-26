@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T17:39:40+00:00",
+  "checked_at": "2026-11-26T09:52:02+00:00",
   "counts": {
     "not publicly checkable": 7,
     "matches": 36
@@ -72,7 +72,7 @@
       "field": "stargazers_count",
       "minimum": 8830,
       "verdict": "matches",
-      "evidence": "stargazers_count = 8841"
+      "evidence": "stargazers_count = 8840"
     },
     {
       "section": "Proof strip",
@@ -102,7 +102,7 @@
       "field": "stargazers_count",
       "minimum": 169250,
       "verdict": "matches",
-      "evidence": "stargazers_count = 169307"
+      "evidence": "stargazers_count = 169350"
     },
     {
       "section": "Proof strip",
@@ -276,7 +276,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/claimledger/main/README.md",
       "quote": "483 of 500 with every setting matched",
       "verdict": "matches",
-      "evidence": "line 7"
+      "evidence": "line 9"
     },
     {
       "section": "Selected work",
@@ -284,7 +284,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/claimledger/main/README.md",
       "quote": "Plain BM25 on the same 500 questions scores 95.2% (476 of 500)",
       "verdict": "matches",
-      "evidence": "line 7"
+      "evidence": "line 9"
     },
     {
       "section": "Selected work",
@@ -292,7 +292,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/claimledger/main/README.md",
       "quote": "exact McNemar p = 0.28",
       "verdict": "matches",
-      "evidence": "line 7"
+      "evidence": "line 9"
     },
     {
       "section": "Selected work",
@@ -348,7 +348,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
       "quote": "Docstep rewrites the docstring to match the signature and keeps what you wrote",
       "verdict": "matches",
-      "evidence": "line 59"
+      "evidence": "line 61"
     },
     {
       "section": "Selected work",
@@ -356,7 +356,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
       "quote": "It is a maintained fork of",
       "verdict": "matches",
-      "evidence": "line 3"
+      "evidence": "line 5"
     },
     {
       "section": "Selected work",
@@ -364,7 +364,7 @@
       "source": "https://raw.githubusercontent.com/zaidwhy/docstep/main/README.md",
       "quote": "code --install-extension zaidwhy.docstep",
       "verdict": "matches",
-      "evidence": "line 12"
+      "evidence": "line 14"
     },
     {
       "section": "Selected work",
