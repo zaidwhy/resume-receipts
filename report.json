@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-26T09:52:02+00:00",
+  "checked_at": "2026-11-27T09:56:19+00:00",
   "counts": {
     "not publicly checkable": 7,
-    "matches": 36
+    "could not be checked": 10,
+    "matches": 26
   },
   "results": [
     {
@@ -21,8 +22,8 @@
       "source": "https://api.github.com/repos/jd/tenacity/pulls/668",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -31,8 +32,8 @@
       "source": "https://api.github.com/repos/dry-python/returns/pulls/2480",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -41,8 +42,8 @@
       "source": "https://api.github.com/repos/memgraph/gqlalchemy/pulls/390",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -51,8 +52,8 @@
       "source": "https://api.github.com/repos/huggingface/transformers/pulls/50873",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -61,8 +62,8 @@
       "source": "https://api.github.com/repos/huggingface/sentence-transformers/pulls/4376",
       "field": "merged",
       "expected": true,
-      "verdict": "matches",
-      "evidence": "merged = true"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -71,8 +72,8 @@
       "source": "https://api.github.com/repos/jd/tenacity",
       "field": "stargazers_count",
       "minimum": 8830,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 8840"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -81,8 +82,8 @@
       "source": "https://api.github.com/repos/dry-python/returns",
       "field": "stargazers_count",
       "minimum": 4350,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 4390"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -91,8 +92,8 @@
       "source": "https://api.github.com/repos/memgraph/gqlalchemy",
       "field": "stargazers_count",
       "minimum": 300,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 302"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -101,8 +102,8 @@
       "source": "https://api.github.com/repos/huggingface/transformers",
       "field": "stargazers_count",
       "minimum": 169250,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 169350"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
@@ -111,8 +112,8 @@
       "source": "https://api.github.com/repos/huggingface/sentence-transformers",
       "field": "stargazers_count",
       "minimum": 19300,
-      "verdict": "matches",
-      "evidence": "stargazers_count = 19307"
+      "verdict": "could not be checked",
+      "evidence": "HTTP Error 403: rate limit exceeded"
     },
     {
       "section": "Proof strip",
